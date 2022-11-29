@@ -20,8 +20,7 @@ public class ItemCollector : MonoBehaviour
     {
             if (collision.gameObject.GetComponent<BoxCollider2D>())
             {
-            Debug.Log("skata");
-            Destroy(collision.gameObject);
+            Destroy(collision.gameObject);   
             }
     }
 }

@@ -6,7 +6,7 @@ public class SceneController : MonoBehaviour
 {
     [SerializeField] GameObject banana;
     private GameObject bananaScene;
-    private int prevIndex = 0;
+    //private int prevIndex = 0;
     private Vector2[] coords =
     {
         new Vector2(2f,0.79f), new Vector2(-1.5f,1.23f), new Vector2(3.36f,-0.41f), new Vector2(-5.52f,1.56f)
@@ -22,7 +22,7 @@ public class SceneController : MonoBehaviour
     {
         if (bananaScene == null)
         {
-            int newIndex = Random.RandomRange(0, coords.Length);
+            int newIndex = Random.Range(0, coords.Length);
             bananaScene = Instantiate(banana) as GameObject;
             bananaScene.transform.position = coords[newIndex];
         }
